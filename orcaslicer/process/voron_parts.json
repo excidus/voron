@@ -1,0 +1,9 @@
+{
+    "from": "User",
+    "inherits": "Default",
+    "name": "Voron Parts",
+    "print_settings_id": "Voron Parts",
+    "sparse_infill_density": "40%",
+    "version": "0.0.0.0",
+    "wall_loops": "4"
+}
