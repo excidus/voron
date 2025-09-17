@@ -1,0 +1,19 @@
+[gcode_macro PRIME_NOZZLE]
+gcode:
+    SAVE_GCODE_STATE NAME=PRIME_NOZZLE_STATE 
+    G90 ; Ensure absolute positioning
+    G92 E0 ; Reset extruder position
+    G1 X4 Y4 F9000
+    G1 Y44 E1 F900
+    RESTORE_GCODE_STATE NAME=PRIME_NOZZLE_STATE
+
+
+[gcode_macro _CURA_SET_PRINT_STATS_INFO]
+gcode:
+  {% if params.LAYER_COUNT is defined %}
+    SET_PRINT_STATS_INFO TOTAL_LAYER={params.LAYER_COUNT}
+  {% endif %}
+  {% if params.LAYER is defined %}
+    SET_PRINT_STATS_INFO CURRENT_LAYER={(params.LAYER | int) + 1}
+  {% endif %}
+
