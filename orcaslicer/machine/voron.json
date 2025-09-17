@@ -1,0 +1,66 @@
+{
+    "bed_custom_model": "",
+    "bed_custom_texture": "",
+    "deretraction_speed": [
+        "50"
+    ],
+    "extruder_clearance_height_to_lid": "330",
+    "extruder_clearance_radius": "50",
+    "from": "User",
+    "inherits": "Voron 2.4 350 0.4 nozzle",
+    "is_custom_defined": "0",
+    "machine_max_acceleration_extruding": [
+        "10000",
+        "20000"
+    ],
+    "machine_max_acceleration_x": [
+        "5000",
+        "20000"
+    ],
+    "machine_max_acceleration_y": [
+        "5000",
+        "20000"
+    ],
+    "machine_max_acceleration_z": [
+        "5000",
+        "200"
+    ],
+    "machine_max_speed_e": [
+        "50",
+        "25"
+    ],
+    "machine_max_speed_x": [
+        "700",
+        "200"
+    ],
+    "machine_max_speed_y": [
+        "700",
+        "200"
+    ],
+    "machine_max_speed_z": [
+        "350",
+        "12"
+    ],
+    "machine_start_gcode": "PRINT_START EXTRUDER_TEMP=[nozzle_temperature_initial_layer] BED_TEMP=[bed_temperature_initial_layer_single] PRINT_MIN={first_layer_print_min[0]},{first_layer_print_min[1]} PRINT_MAX={first_layer_print_max[0]},{first_layer_print_max[1]}",
+    "name": "Voron",
+    "nozzle_type": "brass",
+    "print_host": "192.168.50.31:8002",
+    "print_host_webui": "8002",
+    "printer_settings_id": "Voron",
+    "printer_structure": "corexy",
+    "printhost_apikey": "572c3fee64024a0885cc393eed4dc44e",
+    "printhost_ssl_ignore_revoke": "1",
+    "retract_when_changing_layer": [
+        "0"
+    ],
+    "retraction_length": [
+        "1"
+    ],
+    "retraction_speed": [
+        "50"
+    ],
+    "version": "2.2.0.4",
+    "wipe": [
+        "0"
+    ]
+}
